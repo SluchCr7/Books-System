@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Images/app-development.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="icon" href="calculator.png" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="Cont">
+    <h1 class="title_heading">Book Store</h1>
+    <span class="Notifi noneView" id="NotifyText">Added Successfully</span>
+        <div class="Inputs grid xl:grid-cols-2 sm:grid-cols-1 gap-4">
+            <div class="input">
+                <label for="" class="label">Book Name</label>
+                <input type="text" class="inputText" id="BookName" placeholder="Enter Book Name" required>
+            </div>
+            <div class="input">
+                <label for="" class="label">Author Name</label>
+                <input type="text" class="inputText" id="AuthorName" placeholder="Enter Author Name" required>
+            </div>
+            <div class="input">
+                <label for="" class="label">Price</label>
+                <input type="number" class="inputText" id="Price" placeholder="Enter Price" required>
+            </div>
+            <div class="input">
+                <label for="" class="label">Quantity</label>
+                <input type="number" class="inputText" id="Quantity" placeholder="Enter Quantity" required>
+            </div>
+            <button type="submit" id="btnAdd">Add</button>
+        </div>
+        <table class="body">
+            <thead class="thead">
+                <tr class="t_row">
+                    <th class="t_ceil t_ceil_head">ID</th>
+                    <th class="t_ceil t_ceil_head">Book</th>
+                    <th class="t_ceil t_ceil_head">Author</th>
+                    <th class="t_ceil t_ceil_head">Price</th>
+                    <th class="t_ceil t_ceil_head">Quantity</th>
+                    <th class="t_ceil"><button id="DeleteAll">Delete</button></th>
+                </tr>
+            </thead>
+            <tbody class="tbody" id="tbody">
+            </tbody>
+        </table>
+        <div class="waterIcon" id="waterIcon">
+            <i class="fa-solid fa-droplet"></i>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>  
